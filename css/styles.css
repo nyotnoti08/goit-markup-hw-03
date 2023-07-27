@@ -77,14 +77,8 @@ body {
   color: var(--iris);
 }
 
-/* I ADDED DISPLAY: FLEX HERE */
 .page-header {
   border-bottom: 1px solid var(--cornflower);
-  display: flex;
-}
-
-.logo-link {
-  text-decoration: none;
 }
 
 /* END OF HEADER */
@@ -360,10 +354,14 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  /*
   margin-left: -30px;
-  margin-top: -30px; */
-  gap: 30px;
+  margin-top: -30px;
+}
+
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .filters {
